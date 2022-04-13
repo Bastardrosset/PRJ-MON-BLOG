@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lobster Two", cursive;
+}
+body {
+  background: url(../assets/river.jpg) no-repeat center/cover;
+  backdrop-filter: blur(4px);
+  object-fit: cover;
+}
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(255, 245, 238, 0.719);
+  margin-bottom: 50px;
+}
+h2 {
+  margin: 10px;
+  font-size: 1.8rem;
+  font-family: "Lobster Two", cursive;
+  text-shadow: 2px 2px 3px rgba(255, 245, 238, 0.719);
+  margin-top: 30px;
+}
+p {
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.267);
+  font-size: 1.1rem;
+  font-weight: bolder;
+  line-height: 1.3rem;
+  box-shadow: -2px -1px 2px rgba(0, 0, 0, 0.452);
+  opacity: 100%;
+  z-index: 10;
+}
+.text-imitations p a {
+  color: black;
+  font-size: 1.2rem;
+}
+/****************** Caracteristiques des box photos *******************/
+.pictures-fish,
+.pictures-fly,
+.pictures-competition {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/****************** Caracteristiques des photos *******************/
+.pictures-fish .image1,
+.pictures-fish .image2,
+.pictures-fish .image3,
+.pictures-fly .image4,
+.pictures-fly .image5,
+.pictures-fly .image6,
+.pictures-competition .image7,
+.pictures-competition .image8 {
+  width: 25%;
+  height: 210px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+/******************** Photos de la 1er partie de page *******************/
+.pictures-fish .image1 {
+  background: url(../assets/ombre.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-fish .image2 {
+  background: url(../assets/truite2.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-fish .image3 {
+  background: url(../assets/truite.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-fish .image1:hover {
+  transform: translateX(50%) scale(2, 2);
+}
+
+.pictures-fish .image2:hover {
+  transform: scale(2, 2);
+}
+.pictures-fish .image3:hover {
+  transform: translateX(-50%) scale(2, 2);
+}
+
+/**************** Photos de la 2em partie de page ****************/
+.pictures-fly .image4 {
+  background: url(../assets/Spentcdc.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-fly .image5 {
+  background: url(../assets/spent.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-fly .image6 {
+  background: url(../assets/pop_blue.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-fly .image4:hover {
+  transform: translateX(50%) scale(2, 2);
+}
+.pictures-fly .image5:hover {
+  transform: scale(2, 2);
+}
+.pictures-fly .image6:hover {
+  transform: translateX(-50%) scale(2, 2);
+}
+
+/**************** Photos de la 3em partie de page ****************/
+.pictures-competition .image7 {
+  background: url(../assets/mustad.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-competition .image8 {
+  background: url(../assets/libellule.jpg) no-repeat center/cover;
+  overflow: hidden;
+}
+.pictures-competition .image7:hover,
+.pictures-competition .image8:hover {
+  transform: scale(2, 2);
+}
+/*************** span des photos des 3 parties *****************/
+.pictures-fish .image1 span,
+.pictures-fish .image2 span,
+.pictures-fish .image3 span,
+.pictures-fly .image4 span,
+.pictures-fly .image5 span,
+.pictures-fly .image6 span,
+.pictures-competition .image7 span,
+.pictures-competition .image8 span {
+  width: 150px;
+  display: inline-block;
+  font-weight: bolder;
+  padding-left: 5%;
+  line-height: 1.5rem;
+  transform: translateX(-100%);
+}
+.pictures-fish .image1 span,
+.pictures-fish .image3 span,
+.pictures-fly .image4 span,
+.pictures-competition .image7 span {
+  color: seashell;
+  font-weight: bolder;
+}
+/******************* Animation de text ****************/
+.pictures-fish .image1:hover :nth-child(1),
+.pictures-fish .image2:hover :nth-child(1),
+.pictures-fish .image3:hover :nth-child(1),
+.pictures-fly .image4:hover :nth-child(1),
+.pictures-fly .image5:hover :nth-child(1),
+.pictures-fly .image6:hover :nth-child(1) {
+  animation-name: text;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes text {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+.pictures-competition .image7:hover :nth-child(1),
+.pictures-competition .image8:hover :nth-child(1) {
+  animation-name: text2;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes text2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+/* *************************FOOTER*********************** */
+
+/***************** Bouton de retoutr a l'accueil *******************/
+.btn {
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: seashell;
+  width: 10%;
+  line-height: 1.4rem;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid seashell;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.btn a:hover {
+  transform: scale(1.1, 1.1);
+  background-color: grey;
+  box-shadow: inset 2px 2px 2px rgb(77, 77, 77);
+}
+.btn a:hover {
+  color: black;
+}
+
+/************** Responsive **************/
+@media screen and (max-width: 810px) {
+  body {
+    height: 130vh;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .pictures-fish .image1:hover :nth-child(1),
+  .pictures-fish .image2:hover :nth-child(1),
+  .pictures-fish .image3:hover :nth-child(1),
+  .pictures-fly .image4:hover :nth-child(1),
+  .pictures-fly .image5:hover :nth-child(1),
+  .pictures-fly .image6:hover :nth-child(1) {
+    animation-name: text;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes text {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateY(80%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  .pictures-fish .image1 span,
+  .pictures-fish .image2 span,
+  .pictures-fish .image3 span,
+  .pictures-fly .image4 span,
+  .pictures-fly .image5 span,
+  .pictures-fly .image6 span,
+  .pictures-competition .image7 span,
+  .pictures-competition .image8 span {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 628px) {
+  .pictures-fish .image1:hover :nth-child(1),
+  .pictures-fish .image2:hover :nth-child(1),
+  .pictures-fish .image3:hover :nth-child(1),
+  .pictures-fly .image4:hover :nth-child(1),
+  .pictures-fly .image5:hover :nth-child(1),
+  .pictures-fly .image6:hover :nth-child(1) {
+    animation-play-state: paused;
+  }
+}
