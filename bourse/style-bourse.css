@@ -76,9 +76,6 @@ span {
 #overflow {
   padding: 1rem;
 }
-
-/* *************************FOOTER*********************** */
-
 /***************** Bouton de retoutr a l'accueil *******************/
 #container-bouton {
   width: 100%;
@@ -87,7 +84,9 @@ span {
   margin-bottom: 3rem;
 }
 .btn {
-  margin-left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn a {
   position: relative;

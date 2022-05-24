@@ -6,6 +6,7 @@
   margin: 0;
 }
 body {
+  width: 100%;
   font-family: "DM Serif Display", serif;
   background: rgb(229, 229, 190);
   background: -webkit-linear-gradient(
@@ -19,12 +20,15 @@ body {
     rgba(0, 57, 115, 1) 99%
   );
 }
-
+.contener{
+  width: 100%;
+}
 h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(255, 245, 238, 0.719);
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -61,7 +65,6 @@ h2 {
   background: url(./assets/dev1.jpg);
   border-radius: 5px;
 }
-
 .Fly,
 .Bourse,
 .Dev-Web {
@@ -101,24 +104,19 @@ a:hover {
   padding-left: 15px;
   background-color: grey;
 }
-/* *************************FOOTER*********************** */
-
-/***************** Bouton de retour a l'accueil *******************/
-
+/************ btn-Retour Accueil ************/
 .btn {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .btn a {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: auto;
   text-decoration: none;
   color: slategray;
-  width: 10%;
   line-height: 1.4rem;
   padding: 10px;
   text-align: center;
@@ -133,6 +131,6 @@ a:hover {
   box-shadow: inset 2px 2px 2px rgb(77, 77, 77);
 }
 .btn a:hover {
-  color: black;
+  color: white;
 }
 /********************** Responsive ********************/

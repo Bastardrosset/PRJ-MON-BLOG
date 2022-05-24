@@ -8,6 +8,10 @@ body {
   background: url(../assets/river.jpg) no-repeat center/cover;
   backdrop-filter: blur(4px);
   object-fit: cover;
+  height: 100%;
+}
+section{
+  height: 100%;
 }
 h1 {
   font-size: 2.5rem;
@@ -89,7 +93,6 @@ p {
 .pictures-fish .image3:hover {
   transform: translateX(-50%) scale(2, 2);
 }
-
 /**************** Photos de la 2em partie de page ****************/
 .pictures-fly .image4 {
   background: url(../assets/Spentcdc.jpg) no-repeat center/cover;
@@ -112,7 +115,6 @@ p {
 .pictures-fly .image6:hover {
   transform: translateX(-50%) scale(2, 2);
 }
-
 /**************** Photos de la 3em partie de page ****************/
 .pictures-competition .image7 {
   background: url(../assets/mustad.jpg) no-repeat center/cover;
@@ -190,23 +192,23 @@ p {
     transform: translateX(20%);
   }
 }
-/* *************************FOOTER*********************** */
-
 /***************** Bouton de retoutr a l'accueil *******************/
+#container-bouton {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
 .btn {
-  margin-top: 110px;
+  padding-bottom: 30px;
+  margin-top: 160px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .btn a {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
-  color: seashell;
-  width: 10%;
+  color: slategray;
   line-height: 1.4rem;
   padding: 10px;
   text-align: center;
@@ -221,9 +223,8 @@ p {
   box-shadow: inset 2px 2px 2px rgb(77, 77, 77);
 }
 .btn a:hover {
-  color: black;
+  color: white;
 }
-
 /************** Responsive **************/
 @media screen and (max-width: 810px) {
   body {
